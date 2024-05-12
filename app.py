@@ -32,7 +32,7 @@ st.markdown(
         f"""
          <style>
          .stApp {{
-             background: url(data:image/;base64,{base64.b64encode(open(main_bg, "rb").read()).decode()});
+             background: url(data:image/;base64,{base64.b64encode(open(, "rb").read()).decode()});
              background-size: cover
          }}
          </style>
