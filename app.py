@@ -5,7 +5,7 @@ import requests
 import base64
 
 st.set_page_config(page_title ="Movie Recommendation System",
-                       page_icon='🎬',
+                       page_icon='🎬',)
                        
 
 hide_st_style = """
