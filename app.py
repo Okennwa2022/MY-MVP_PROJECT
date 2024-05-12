@@ -6,7 +6,7 @@ import base64
 
 st.set_page_config(page_title ="Movie Recommendation System",
                        page_icon='🎬',
-                       layout='wide')
+                       
 
 hide_st_style = """
             <style>
