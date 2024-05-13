@@ -45,7 +45,7 @@ def set_bg_hack(main_bg):
 	   </style>
 	   """,
 	   unsafe_allow_html=True
-
+	)
     
 set_bg_hack('background.png')
 
