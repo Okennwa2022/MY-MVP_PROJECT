@@ -46,7 +46,8 @@ def set_bg_hack(main_bg):
 	   """,
 	   unsafe_allow_html=True
 	)
-    
+
+st.markdown(':orange[text to be colored]')
 set_bg_hack('background.png')
 
     
