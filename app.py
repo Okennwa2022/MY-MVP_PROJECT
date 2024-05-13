@@ -25,23 +25,25 @@ hide_st_style = """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
-def set_bg_hack(main_bg):
-    main_bg_ext = "png"
-
+def set_bg_hack_url():
+    '''
+    A function to unpack an image from url and set as bg.
+    Returns
+    -------
+    The background.
+    '''
+        
     st.markdown(
-    """
-    <style>
-    .reportview-container {
-        background: url("https://images.app.goo.gl/YYijhJnQk8WCG1FF8")
-    }
-   .sidebar .sidebar-content {
-        background: url("https://images.app.goo.gl/YYijhJnQk8WCG1FF8")
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-    )
-  
+         f"""
+         <style>
+         .stApp {{
+             background: url("https://images.app.goo.gl/YYijhJnQk8WCG1FF8");
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )  
 set_bg_hack('background.png')
 
 movies = pickle.load(open('movies.pkl', 'rb'))
