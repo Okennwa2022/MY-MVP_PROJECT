@@ -29,18 +29,19 @@ def set_bg_hack(main_bg):
     main_bg_ext = "png"
 
     st.markdown(
-        f"""
-         <style>
-         .stApp {{
-             background: url("https://images.app.goo.gl/YYijhJnQk8WCG1FF8");
-             background-size: cover
-         }}
-         </style>
-         """,
-        unsafe_allow_html=True
+    """
+    <style>
+    .reportview-container {
+        background: url("https://images.app.goo.gl/YYijhJnQk8WCG1FF8")
+    }
+   .sidebar .sidebar-content {
+        background: url("https://images.app.goo.gl/YYijhJnQk8WCG1FF8")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
     )
-
-
+  
 set_bg_hack('background.png')
 
 movies = pickle.load(open('movies.pkl', 'rb'))
