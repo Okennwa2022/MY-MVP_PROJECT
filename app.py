@@ -37,7 +37,7 @@ def set_bg_hack_url():
          f"""
          <style>
          .stApp {{
-             background: url("https://images.app.goo.gl/YYijhJnQk8WCG1FF8");
+             background: url("https://wallpapers.com/images/high/movie-poster-background-samvvhyda6ylvmkw.webp");
              background-size: cover
          }}
          </style>
