@@ -4,9 +4,9 @@ import pandas as pd
 import requests
 import base64
 
-st.set_page_config(page_title ="Movie Recommendation System",
-                       page_icon='🎬',)
-                       
+st.set_page_config(page_title ="B Movie Recommendation System",
+                       page_icon='🎬',
+                       layout='wide')                       
 
 hide_st_style = """
             <style>
@@ -71,7 +71,7 @@ def recommend(movie):
     return recommended_movies, movies_posters
 
 
-st.title("Movie Recommendation System")
+st.title("B Movie Recommendation System")
 
 movie_name = st.selectbox("Enter the Movie Name:",movies_list)
 
