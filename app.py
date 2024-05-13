@@ -44,7 +44,7 @@ def set_bg_hack_url():
          """,
          unsafe_allow_html=True
      )  
-set_bg_hack('background.png')
+
 
 movies = pickle.load(open('movies.pkl', 'rb'))
 movies_list = pd.Series(movies.title.values)
