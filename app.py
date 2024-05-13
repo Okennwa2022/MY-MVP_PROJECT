@@ -47,7 +47,6 @@ def set_bg_hack(main_bg):
 	   unsafe_allow_html=True
 	)
 
-st.markdown(':orange[background.png]')
 set_bg_hack('background.png')
 
     
