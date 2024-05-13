@@ -28,7 +28,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 def set_bg_hack(main_bg):
     main_bg_ext = "png"
 
- st.markdown
+ st.markdown(
         f"""
          <style>
          .stApp {{
@@ -38,7 +38,7 @@ def set_bg_hack(main_bg):
          </style>
          """,
         unsafe_allow_html=True
-    
+ )
 
 
 set_bg_hack('background.png')
