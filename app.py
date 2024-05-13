@@ -24,28 +24,32 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
+def set_bg_hack(main_bg):
+	'''
+	A function to unpack an image from root folder and set as bg.
+	
+	Returns
+	-------
+	The background.
+	'''
+	# set bg name
+	main_bg_ext = "png"
+	  
+	st.markdown(
+	   f"""
+	   <style>
+	   .stApp {{
+	       background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()});
+	       background-size: cover
+	   }}
+	   </style>
+	   """,
+	   unsafe_allow_html=True
 
-def set_bg_hack_url():
-    '''
-    A function to unpack an image from url and set as bg.
-    Returns
-    -------
-    The background.
-    '''
-        
-    st.markdown(
-         f"""
-         <style>
-         .stApp {{
-             background: url("https://images.app.goo.gl/EmJZp8baqSfFsA7h7.jpg");
-             background-size: cover
-         }}
-         </style>
-         """,
-         unsafe_allow_html=True
-     )  
+    
+set_bg_hack('background.png')
 
-
+    
 movies = pickle.load(open('movies.pkl', 'rb'))
 movies_list = pd.Series(movies.title.values)
 #similarity = pickle.load(open('similarity.pkl', 'rb'))
