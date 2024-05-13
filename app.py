@@ -28,11 +28,11 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 def set_bg_hack(main_bg):
     main_bg_ext = "png"
 
-st.markdown(
+ st.markdown(
         f"""
          <style>
          .stApp {{
-             
+             background: url(https://images.app.goo.gl/YYijhJnQk8WCG1FF8);
              background-size: cover
          }}
          </style>
